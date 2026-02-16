@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4750732b-26ec-47c6-8a85-0d70aecd543d" name="Changes" comment="feat: add type definitions for Vite and update import statements across components">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="4750732b-26ec-47c6-8a85-0d70aecd543d" name="Changes" comment="feat: update workspace configuration to reflect recent changes in type definitions and import statements">
+      <change afterPath="$PROJECT_DIR$/src/application/api/create-api-client.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/application/api/refresh-queue.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +104,7 @@
       <workItem from="1771160194429" duration="4263000" />
       <workItem from="1771237170141" duration="7468000" />
       <workItem from="1771256786330" duration="1856000" />
-      <workItem from="1771259418032" duration="2090000" />
+      <workItem from="1771259418032" duration="2337000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: standardize import statements and formatting across components">
       <option name="closed" value="true" />
@@ -464,15 +466,29 @@
       <option name="project" value="LOCAL" />
       <updated>1771261491327</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="feat: add tsconfig.tsbuildinfo to .gitignore">
+      <option name="closed" value="true" />
+      <created>1771261542851</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1771261542851</updated>
+    </task>
+    <task id="LOCAL-00047" summary="feat: update workspace configuration to reflect recent changes in type definitions and import statements">
+      <option name="closed" value="true" />
+      <created>1771261554949</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1771261554949</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: implement logger service and add routing configuration" />
-    <MESSAGE value="feat: add redux-saga middleware to store configuration" />
     <MESSAGE value="feat: add logging interface, server setup, and route definitions" />
     <MESSAGE value="feat: add logging interface, server setup, route definitions, and token storage" />
     <MESSAGE value="fix: update comments for QueryProvider to improve clarity and language consistency" />
@@ -496,7 +512,9 @@
     <MESSAGE value="feat: refine ESLint configuration by removing unnecessary comments and ensuring prettier integration" />
     <MESSAGE value="feat: update workspace configuration and add ESLint integration" />
     <MESSAGE value="feat: add type definitions for Vite and update import statements across components" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add type definitions for Vite and update import statements across components" />
+    <MESSAGE value="feat: add tsconfig.tsbuildinfo to .gitignore" />
+    <MESSAGE value="feat: update workspace configuration to reflect recent changes in type definitions and import statements" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update workspace configuration to reflect recent changes in type definitions and import statements" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
