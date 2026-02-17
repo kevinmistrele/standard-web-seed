@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4750732b-26ec-47c6-8a85-0d70aecd543d" name="Changes" comment="feat: update workspace configuration to reflect recent changes in type definitions and import statements">
-      <change afterPath="$PROJECT_DIR$/src/application/api/create-api-client.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/api/refresh-queue.ts" afterDir="false" />
+    <list default="true" id="4750732b-26ec-47c6-8a85-0d70aecd543d" name="Changes" comment="feat: update workspace configuration to include recent changes in type definitions and import statements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/api/create-api-client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/api/create-api-client.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,23 +103,8 @@
       <workItem from="1771160194429" duration="4263000" />
       <workItem from="1771237170141" duration="7468000" />
       <workItem from="1771256786330" duration="1856000" />
-      <workItem from="1771259418032" duration="2337000" />
-    </task>
-    <task id="LOCAL-00001" summary="refactor: standardize import statements and formatting across components">
-      <option name="closed" value="true" />
-      <created>1771244794137</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1771244794137</updated>
-    </task>
-    <task id="LOCAL-00002" summary="feat: add setInitialized reducer to manage app initialization state">
-      <option name="closed" value="true" />
-      <created>1771244808812</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1771244808812</updated>
+      <workItem from="1771259418032" duration="2741000" />
+      <workItem from="1771294501348" duration="128000" />
     </task>
     <task id="LOCAL-00003" summary="test: add unit tests for app slice reducer and setInitialized action">
       <option name="closed" value="true" />
@@ -482,17 +466,45 @@
       <option name="project" value="LOCAL" />
       <updated>1771261554949</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="feat: refactor API client implementation to use createApiClient function">
+      <option name="closed" value="true" />
+      <created>1771261996222</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1771261996222</updated>
+    </task>
+    <task id="LOCAL-00049" summary="feat: implement API client with request and response interceptors">
+      <option name="closed" value="true" />
+      <created>1771262004871</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1771262004871</updated>
+    </task>
+    <task id="LOCAL-00050" summary="feat: add refresh queue implementation to handle failed requests">
+      <option name="closed" value="true" />
+      <created>1771262010656</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1771262010657</updated>
+    </task>
+    <task id="LOCAL-00051" summary="feat: update workspace configuration to include recent changes in type definitions and import statements">
+      <option name="closed" value="true" />
+      <created>1771262014816</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1771262014816</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add logging interface, server setup, and route definitions" />
-    <MESSAGE value="feat: add logging interface, server setup, route definitions, and token storage" />
-    <MESSAGE value="fix: update comments for QueryProvider to improve clarity and language consistency" />
-    <MESSAGE value="docs: add testing strategy section to README.md" />
     <MESSAGE value="feat: add logging provider interface, server setup, route definitions, and token storage" />
     <MESSAGE value="feat: add server setup with MSW and request handlers" />
     <MESSAGE value="feat: add logging provider interface and token storage implementation" />
@@ -514,7 +526,11 @@
     <MESSAGE value="feat: add type definitions for Vite and update import statements across components" />
     <MESSAGE value="feat: add tsconfig.tsbuildinfo to .gitignore" />
     <MESSAGE value="feat: update workspace configuration to reflect recent changes in type definitions and import statements" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update workspace configuration to reflect recent changes in type definitions and import statements" />
+    <MESSAGE value="feat: refactor API client implementation to use createApiClient function" />
+    <MESSAGE value="feat: implement API client with request and response interceptors" />
+    <MESSAGE value="feat: add refresh queue implementation to handle failed requests" />
+    <MESSAGE value="feat: update workspace configuration to include recent changes in type definitions and import statements" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update workspace configuration to include recent changes in type definitions and import statements" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
