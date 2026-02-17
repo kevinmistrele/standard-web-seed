@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4750732b-26ec-47c6-8a85-0d70aecd543d" name="Changes" comment="feat: update workspace configuration to include recent changes in type definitions and import statements">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/api/create-api-client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/api/create-api-client.ts" afterDir="false" />
-    </list>
+    <list default="true" id="4750732b-26ec-47c6-8a85-0d70aecd543d" name="Changes" comment="feat: update workspace configuration to include recent changes in task summaries and import statements" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,23 +101,7 @@
       <workItem from="1771237170141" duration="7468000" />
       <workItem from="1771256786330" duration="1856000" />
       <workItem from="1771259418032" duration="2741000" />
-      <workItem from="1771294501348" duration="128000" />
-    </task>
-    <task id="LOCAL-00003" summary="test: add unit tests for app slice reducer and setInitialized action">
-      <option name="closed" value="true" />
-      <created>1771244818061</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1771244818061</updated>
-    </task>
-    <task id="LOCAL-00004" summary="refactor: standardize quotes and formatting in accordion, alert, and alert-dialog components">
-      <option name="closed" value="true" />
-      <created>1771244829618</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1771244829618</updated>
+      <workItem from="1771294501348" duration="197000" />
     </task>
     <task id="LOCAL-00005" summary="feat: implement routing with RouterProvider in App component">
       <option name="closed" value="true" />
@@ -498,15 +479,29 @@
       <option name="project" value="LOCAL" />
       <updated>1771262014816</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="feat: refactor API client to improve error handling and token management logic">
+      <option name="closed" value="true" />
+      <created>1771294650909</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1771294650910</updated>
+    </task>
+    <task id="LOCAL-00053" summary="feat: update workspace configuration to include recent changes in task summaries and import statements">
+      <option name="closed" value="true" />
+      <created>1771294654831</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1771294654831</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add logging provider interface, server setup, route definitions, and token storage" />
-    <MESSAGE value="feat: add server setup with MSW and request handlers" />
     <MESSAGE value="feat: add logging provider interface and token storage implementation" />
     <MESSAGE value="feat: update TypeScript configuration for testing support" />
     <MESSAGE value="feat: add logging provider interface and update project configuration for testing" />
@@ -530,7 +525,9 @@
     <MESSAGE value="feat: implement API client with request and response interceptors" />
     <MESSAGE value="feat: add refresh queue implementation to handle failed requests" />
     <MESSAGE value="feat: update workspace configuration to include recent changes in type definitions and import statements" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update workspace configuration to include recent changes in type definitions and import statements" />
+    <MESSAGE value="feat: refactor API client to improve error handling and token management logic" />
+    <MESSAGE value="feat: update workspace configuration to include recent changes in task summaries and import statements" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update workspace configuration to include recent changes in task summaries and import statements" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
