@@ -59,6 +59,5 @@ The project implements a comprehensive testing pyramid:
 
 To run all tests:
 ```bash
-npm run test        # Unit tests
-npm run test:e2e    # E2E tests
+npm run validate
 ```
