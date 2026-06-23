@@ -1,63 +1,155 @@
-# 🚀 Standard Web Seed
+# Standard Web Seed
 
-A production-ready, highly opinionated **React + TypeScript** template designed for scalability, performance, and enterprise-grade code quality. This boilerplate implements a strictly decoupled **3-Layer Architecture** and automated quality enforcement.
+![React](https://img.shields.io/badge/React_19-20232A?style=flat&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript_5.9-3178C6?style=flat&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite_7-646CFF?style=flat&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_v4-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux_Saga-764ABC?style=flat&logo=redux&logoColor=white)
+![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat&logo=vitest&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white)
 
----
-
-## 🏗️ Architecture Overview
-
-The project follows a **Separation of Concerns (SoC)** approach, dividing the codebase into three distinct layers to ensure maintainability and long-term scalability:
-
-* **Application Layer (`/application`)**: The technical foundation. It contains infrastructure, API clients (Axios), global state management (Redux Saga), and global providers.
-* **Feature Layer (`/features`)**: The core business logic. It contains domain-specific hooks (TanStack Query), business rules (Zod validation schemas), and domain types.
-* **Screen Layer (`/screens`)**: The user experience layer. It focuses on UI orchestration, page-specific components, and routing.
+> Production-ready React + TypeScript boilerplate with 3-layer architecture, automated quality gates, and a complete testing pyramid.
 
 ---
 
-## 🛠️ Tech Stack
+## Why this template?
 
-* **Core**: React 19 + Vite + TypeScript (Strict Mode).
-* **Styling**: Tailwind CSS v4 + Shadcn UI.
-* **State Management**: Redux Toolkit & Redux Saga.
-* **Data Fetching**: TanStack Query (React Query) v5.
-* **Validation**: Zod (Schema-based validation).
-* **Navigation**: React Router Dom v7.
-* **Notifications**: Sonner (Rich toast notifications).
+Most boilerplates give you a blank slate. This one gives you **conventions**.
+
+Every structural decision — from how layers communicate to how imports are ordered — is encoded as a linting rule. The goal is that any developer who opens this project immediately understands where everything lives and why.
 
 ---
 
-## 🛡️ Quality & Hardening
+## Architecture
 
-This template enforces strict coding standards automatically via **Husky** and **lint-staged** to prevent technical debt:
+The project enforces a strict **3-Layer Separation of Concerns**:
 
-* **Short Functions Rule**: All functions are restricted to a maximum of **50 lines** to ensure readability and single responsibility.
-* **Cyclomatic Complexity**: Limited to **10** to prevent deeply nested logic and "spaghetti code".
-* **Import Organization**: Automated grouping and sorting (External -> Application -> Features -> Screens -> UI).
-* **Security**: Pre-configured protection against common vulnerabilities like XSS and unsafe inner HTML rendering.
-
----
-
-## 📂 Project Structure
-
-```bash
+```
 src/
-├── application/     # Infrastructure (API, Store, Providers)
-├── features/        # Business Logic (Hooks, Rules, Types)
-├── screens/         # UI/UX (Pages, Screen-specific hooks)
-├── components/      # Global Design System (UI & Layout)
-├── routes/          # Navigation Configuration
-└── types/           # Global TypeScript Contracts
+├── application/     # Infrastructure — API clients, global store, providers
+├── features/        # Business logic — domain hooks, Zod schemas, domain types
+├── screens/         # UI/UX — pages, screen-specific components and hooks
+├── components/      # Design system — shared UI primitives and layout
+├── routes/          # Navigation configuration
+└── types/           # Global TypeScript contracts
 ```
 
-## 🧪 Testing Strategy
+**The rule:** layers only communicate downward. A screen can consume a feature. A feature can consume application. Neither goes the other way.
 
-The project implements a comprehensive testing pyramid:
+---
 
-* **Unit & Integration**: Powered by **Vitest** + **React Testing Library**.
-* **API Mocking**: **MSW (Mock Service Worker)** for network-level interception.
-* **E2E Testing**: **Playwright** for real-user journey validation across Chromium, Firefox, and WebKit.
+## Tech Stack
 
-To run all tests:
+| Concern | Technology |
+|---|---|
+| Framework | React 19 + TypeScript 5.9 (strict mode) |
+| Build | Vite 7 |
+| Styling | Tailwind CSS v4 + shadcn/ui + Base UI |
+| State | Redux Toolkit + Redux Saga |
+| Data fetching | TanStack Query v5 |
+| Forms | React Hook Form + Zod v4 |
+| Routing | React Router DOM v7 |
+| Notifications | Sonner |
+| Unit tests | Vitest + React Testing Library |
+| E2E tests | Playwright (Chromium, Firefox, WebKit) |
+| Linting | ESLint + Prettier + eslint-plugin-import-helpers |
+| Git hooks | Husky + lint-staged |
+
+---
+
+## Quality Gates
+
+Every commit runs automatically through **Husky + lint-staged**:
+
+```
+git commit → ESLint --fix → Prettier --write → commit proceeds
+```
+
+The full validation pipeline runs before any build:
+
 ```bash
 npm run validate
+# lint → typecheck → test:coverage → build
 ```
+
+Enforced rules beyond standard ESLint:
+
+| Rule | Limit | Why |
+|---|---|---|
+| Max function lines | 50 | Single responsibility |
+| Cyclomatic complexity | 10 | No spaghetti logic |
+| Import order | Enforced | External → Application → Features → Screens → UI |
+| XSS protection | DOMPurify | Safe HTML rendering |
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 20+
+
+### Installation
+
+```bash
+git clone https://github.com/kevinmistrele/standard-web-seed.git
+cd standard-web-seed
+npm install
+```
+
+### Environment Variables
+
+```bash
+cp .env.example .env
+```
+
+### Running
+
+```bash
+npm run dev
+```
+
+Access at `http://localhost:5173`
+
+---
+
+## Available Scripts
+
+| Script | Description |
+|---|---|
+| `npm run dev` | Start dev server |
+| `npm run build` | Production build |
+| `npm run lint` | Run ESLint |
+| `npm run typecheck` | TypeScript check without emit |
+| `npm run test` | Run unit tests (watch mode) |
+| `npm run test:coverage` | Run unit tests with coverage report |
+| `npm run test:e2e` | Run Playwright e2e tests |
+| `npm run test:e2e:ui` | Open Playwright UI mode |
+| `npm run validate` | Full pipeline: lint + typecheck + coverage + build |
+
+---
+
+## Testing Strategy
+
+```
+         ┌─────────────┐
+         │  E2E Tests  │  Playwright — real user journeys
+         │  Playwright │  Chromium · Firefox · WebKit
+         └──────┬──────┘
+         ┌──────┴──────┐
+         │  Integration│  React Testing Library
+         │  Unit Tests │  Vitest + jsdom
+         └─────────────┘
+```
+
+---
+
+## Developer Guide
+
+See [DEVELOPER_GUIDE.md](./DEVELOPER_GUIDE.md) for conventions, layer responsibilities, and contribution guidelines.
+
+---
+
+## Author
+
+Made by [Kevin Mistrele](https://github.com/kevinmistrele)
